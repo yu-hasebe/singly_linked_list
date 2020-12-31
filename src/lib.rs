@@ -92,7 +92,7 @@ impl MyLinkedList {
                 current_link = current_link.unwrap().next.as_mut();
             }
             let next_node = current_link
-                .as_mut()
+                .as_mut() // why does it need as_mut()?
                 .unwrap()
                 .next
                 .as_mut()
